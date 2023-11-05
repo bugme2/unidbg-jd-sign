@@ -32,7 +32,7 @@ public class JdController{
         }
         String uuid = StrUtil.uuid();
         String sign = jdService.getSign(functionId, uuid, body);
-        String res = "&clientVersion=11.0.2&build=97565&client=android&partner=yyds3&sdkVersion=30&lang=zh_CN&harmonyOs=0&networkType=wifi&oaid=" + uuid + "&uuid=" + uuid + "&" + sign;
+        String res = "client=android&clientVersion=12.2.2" + "&uuid=" + uuid + "&" + sign;
         return R.success("成功！", res);
     }
 

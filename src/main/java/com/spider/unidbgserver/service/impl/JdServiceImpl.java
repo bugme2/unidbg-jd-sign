@@ -26,7 +26,7 @@ public class JdServiceImpl implements JdService {
                 body,
                 uuid,
                 "android",
-                "11.0.2");
+                "12.2.2");
         return ret.getValue();
     }
 }
